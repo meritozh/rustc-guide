@@ -74,7 +74,7 @@
         </script>
 
         <nav id="sidebar" class="sidebar" aria-label="Table of contents">
-            <ol class="chapter"><li><a href="about-this-guide.html"><strong aria-hidden="true">1.</strong> About this guide</a></li><li><a href="how-to-build-and-run.html"><strong aria-hidden="true">2.</strong> How to build the compiler and run what you built</a></li><li><a href="conventions.html"><strong aria-hidden="true">3.</strong> Coding conventions</a></li><li><a href="tests/intro.html"><strong aria-hidden="true">4.</strong> The compiler testing framework</a></li><li><ol class="section"><li><a href="tests/running.html"><strong aria-hidden="true">4.1.</strong> Running tests</a></li><li><a href="tests/adding.html"><strong aria-hidden="true">4.2.</strong> Adding new tests</a></li><li><a href="compiletest.html"><strong aria-hidden="true">4.3.</strong> Using compiletest + commands to control test execution</a></li></ol></li><li><a href="walkthrough.html"><strong aria-hidden="true">5.</strong> Walkthrough: a typical contribution</a></li><li><a href="high-level-overview.html"><strong aria-hidden="true">6.</strong> High-level overview of the compiler source</a></li><li><a href="query.html"><strong aria-hidden="true">7.</strong> Queries: demand-driven compilation</a></li><li><ol class="section"><li><a href="incremental-compilation.html"><strong aria-hidden="true">7.1.</strong> Incremental compilation</a></li></ol></li><li><a href="the-parser.html"><strong aria-hidden="true">8.</strong> The parser</a></li><li><a href="macro-expansion.html"><strong aria-hidden="true">9.</strong> Macro expansion</a></li><li><a href="name-resolution.html"><strong aria-hidden="true">10.</strong> Name resolution</a></li><li><a href="hir.html"><strong aria-hidden="true">11.</strong> The HIR (High-level IR)</a></li><li><a href="ty.html"><strong aria-hidden="true">12.</strong> The ty module: representing types</a></li><li><a href="type-inference.html"><strong aria-hidden="true">13.</strong> Type inference</a></li><li><a href="trait-resolution.html"><strong aria-hidden="true">14.</strong> Trait resolution</a></li><li><ol class="section"><li><a href="trait-hrtb.html"><strong aria-hidden="true">14.1.</strong> Higher-ranked trait bounds</a></li><li><a href="trait-caching.html"><strong aria-hidden="true">14.2.</strong> Caching subtleties</a></li><li><a href="trait-specialization.html"><strong aria-hidden="true">14.3.</strong> Speciailization</a></li></ol></li><li><a href="type-checking.html"><strong aria-hidden="true">15.</strong> Type checking</a></li><li><a href="mir.html"><strong aria-hidden="true">16.</strong> The MIR (Mid-level IR)</a></li><li><ol class="section"><li><a href="mir-construction.html"><strong aria-hidden="true">16.1.</strong> MIR construction</a></li><li><a href="mir-visitor.html"><strong aria-hidden="true">16.2.</strong> MIR visitor and traversal</a></li><li><a href="mir-passes.html"><strong aria-hidden="true">16.3.</strong> MIR passes: getting the MIR for a function</a></li><li><a href="mir-borrowck.html"><strong aria-hidden="true">16.4.</strong> MIR borrowck</a></li><li><ol class="section"><li><a href="mir-regionck.html"><strong aria-hidden="true">16.4.1.</strong> MIR-based region checking (NLL)</a></li></ol></li><li><a href="mir-optimizations.html"><strong aria-hidden="true">16.5.</strong> MIR optimizations</a></li></ol></li><li><a href="const-eval.html"><strong aria-hidden="true">17.</strong> Constant evaluation</a></li><li><ol class="section"><li><a href="miri.html"><strong aria-hidden="true">17.1.</strong> miri const evaluator</a></li></ol></li><li><a href="param_env.html"><strong aria-hidden="true">18.</strong> Parameter Environments</a></li><li><a href="trans.html"><strong aria-hidden="true">19.</strong> Generating LLVM IR</a></li><li><a href="background.html"><strong aria-hidden="true">20.</strong> Background material</a></li><li><a href="glossary.html"><strong aria-hidden="true">21.</strong> Glossary</a></li><li><a href="code-index.html"><strong aria-hidden="true">22.</strong> Code Index</a></li></ol>
+            <ol class="chapter"><li><a href="about-this-guide.html"><strong aria-hidden="true">1.</strong> About this guide</a></li><li><a href="how-to-build-and-run.html"><strong aria-hidden="true">2.</strong> How to build the compiler and run what you built</a></li><li><a href="conventions.html"><strong aria-hidden="true">3.</strong> Coding conventions</a></li><li><a href="tests/intro.html"><strong aria-hidden="true">4.</strong> The compiler testing framework</a></li><li><ol class="section"><li><a href="tests/running.html"><strong aria-hidden="true">4.1.</strong> Running tests</a></li><li><a href="tests/adding.html"><strong aria-hidden="true">4.2.</strong> Adding new tests</a></li><li><a href="compiletest.html"><strong aria-hidden="true">4.3.</strong> Using compiletest + commands to control test execution</a></li></ol></li><li><a href="walkthrough.html"><strong aria-hidden="true">5.</strong> Walkthrough: a typical contribution</a></li><li><a href="high-level-overview.html"><strong aria-hidden="true">6.</strong> High-level overview of the compiler source</a></li><li><a href="query.html"><strong aria-hidden="true">7.</strong> Queries: demand-driven compilation</a></li><li><ol class="section"><li><a href="incremental-compilation.html"><strong aria-hidden="true">7.1.</strong> Incremental compilation</a></li></ol></li><li><a href="the-parser.html"><strong aria-hidden="true">8.</strong> The parser</a></li><li><a href="macro-expansion.html"><strong aria-hidden="true">9.</strong> Macro expansion</a></li><li><a href="name-resolution.html"><strong aria-hidden="true">10.</strong> Name resolution</a></li><li><a href="hir.html"><strong aria-hidden="true">11.</strong> The HIR (High-level IR)</a></li><li><a href="ty.html"><strong aria-hidden="true">12.</strong> The ty module: representing types</a></li><li><a href="type-inference.html"><strong aria-hidden="true">13.</strong> Type inference</a></li><li><a href="trait-resolution.html"><strong aria-hidden="true">14.</strong> Trait solving (old-style)</a></li><li><ol class="section"><li><a href="trait-hrtb.html"><strong aria-hidden="true">14.1.</strong> Higher-ranked trait bounds</a></li><li><a href="trait-caching.html"><strong aria-hidden="true">14.2.</strong> Caching subtleties</a></li><li><a href="trait-specialization.html"><strong aria-hidden="true">14.3.</strong> Specialization</a></li></ol></li><li><a href="traits.html"><strong aria-hidden="true">15.</strong> Trait solving (new-style)</a></li><li><ol class="section"><li><a href="traits-lowering-to-logic.html"><strong aria-hidden="true">15.1.</strong> Lowering to logic</a></li><li><ol class="section"><li><a href="traits-goals-and-clauses.html"><strong aria-hidden="true">15.1.1.</strong> Goals and clauses</a></li><li><a href="traits-associated-types.html"><strong aria-hidden="true">15.1.2.</strong> Equality and associated types</a></li><li><a href="traits-implied-bounds.html"><strong aria-hidden="true">15.1.3.</strong> Implied bounds</a></li><li><a href="traits-regions.html"><strong aria-hidden="true">15.1.4.</strong> Region constraints</a></li></ol></li><li><a href="traits-canonical-queries.html"><strong aria-hidden="true">15.2.</strong> Canonical queries</a></li><li><ol class="section"><li><a href="traits-canonicalization.html"><strong aria-hidden="true">15.2.1.</strong> Canonicalization</a></li></ol></li><li><a href="traits-lowering-rules.html"><strong aria-hidden="true">15.3.</strong> Lowering rules</a></li><li><a href="traits-wf.html"><strong aria-hidden="true">15.4.</strong> Well-formedness checking</a></li><li><a href="traits-slg.html"><strong aria-hidden="true">15.5.</strong> The SLG solver</a></li><li><a href="traits-bibliography.html"><strong aria-hidden="true">15.6.</strong> Bibliography</a></li></ol></li><li><a href="type-checking.html"><strong aria-hidden="true">16.</strong> Type checking</a></li><li><a href="mir.html"><strong aria-hidden="true">17.</strong> The MIR (Mid-level IR)</a></li><li><ol class="section"><li><a href="mir-construction.html"><strong aria-hidden="true">17.1.</strong> MIR construction</a></li><li><a href="mir-visitor.html"><strong aria-hidden="true">17.2.</strong> MIR visitor and traversal</a></li><li><a href="mir-passes.html"><strong aria-hidden="true">17.3.</strong> MIR passes: getting the MIR for a function</a></li><li><a href="mir-borrowck.html"><strong aria-hidden="true">17.4.</strong> MIR borrowck</a></li><li><ol class="section"><li><a href="mir-regionck.html"><strong aria-hidden="true">17.4.1.</strong> MIR-based region checking (NLL)</a></li></ol></li><li><a href="mir-optimizations.html"><strong aria-hidden="true">17.5.</strong> MIR optimizations</a></li></ol></li><li><a href="const-eval.html"><strong aria-hidden="true">18.</strong> Constant evaluation</a></li><li><ol class="section"><li><a href="miri.html"><strong aria-hidden="true">18.1.</strong> miri const evaluator</a></li></ol></li><li><a href="param_env.html"><strong aria-hidden="true">19.</strong> Parameter Environments</a></li><li><a href="trans.html"><strong aria-hidden="true">20.</strong> Generating LLVM IR</a></li><li><a href="background.html"><strong aria-hidden="true">21.</strong> Background material</a></li><li><a href="glossary.html"><strong aria-hidden="true">22.</strong> Glossary</a></li><li><a href="code-index.html"><strong aria-hidden="true">23.</strong> Code Index</a></li></ol>
         </nav>
 
         <div id="page-wrapper" class="page-wrapper">
@@ -84,10 +84,10 @@
                 <div id="menu-bar" class="menu-bar">
                     <div id="menu-bar-sticky-container">
                         <div class="left-buttons">
-                            <button id="sidebar-toggle" class="icon-button" type="button" title="Toggle Table of Contents" aria-controls="sidebar">
+                            <button id="sidebar-toggle" class="icon-button" type="button" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
                                 <i class="fa fa-bars"></i>
                             </button>
-                            <button id="theme-toggle" class="icon-button" type="button" title="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
+                            <button id="theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
                                 <i class="fa fa-paint-brush"></i>
                             </button>
                             <ul id="theme-list" class="theme-popup" aria-label="submenu">
@@ -102,7 +102,7 @@
                         <h1 class="menu-title">Guide to Rustc Development</h1>
 
                         <div class="right-buttons">
-                            <a href="print.html" title="Print this book">
+                            <a href="print.html" title="Print this book" aria-label="Print this book">
                                 <i id="print-button" class="fa fa-print"></i>
                             </a>
                         </div>
@@ -2082,6 +2082,7 @@ this temporary arena, and the <code>'cx</code> is the lifetime of the <code>Infe
 <p>The <code>tcx.infer_ctxt</code> method actually returns a builder, which means
 there are some kinds of configuration you can do before the <code>infcx</code> is
 created. See <code>InferCtxtBuilder</code> for more information.</p>
+<p><a name=vars></p>
 <a class="header" href="print.html#inference-variables" id="inference-variables"><h2>Inference variables</h2></a>
 <p>The main purpose of the inference context is to house a bunch of
 <strong>inference variables</strong> – these represent types or regions whose precise
@@ -2229,9 +2230,13 @@ variable to an empty value. We then process each outlives constraint
 repeatedly, growing region variables until a fixed-point is reached.
 Region variables can be grown using a least-upper-bound relation on
 the region lattice in a fairly straightforward fashion.</p>
-<a class="header" href="print.html#trait-resolution" id="trait-resolution"><h1>Trait resolution</h1></a>
+<a class="header" href="print.html#trait-resolution-old-style" id="trait-resolution-old-style"><h1>Trait resolution (old-style)</h1></a>
 <p>This chapter describes the general process of <em>trait resolution</em> and points out
 some non-obvious things.</p>
+<p><strong>Note:</strong> This chapter (and its subchapters) describe how the trait
+solver <strong>currently</strong> works. However, we are in the process of
+designing a new trait solver. If you'd prefer to read about <em>that</em>,
+see <a href="./traits.html"><em>this</em> traits chapter</a>.</p>
 <a class="header" href="print.html#major-concepts" id="major-concepts"><h2>Major concepts</h2></a>
 <p>Trait resolution is the process of pairing up an impl with each
 reference to a trait. So, for example, if there is a generic function like:</p>
@@ -2707,6 +2712,1125 @@ will use at trans time. Thus, we take special care to avoid projecting
 associated types unless either (1) the associated type does not use
 <code>default</code> and thus cannot be overridden or (2) all input types are
 known concretely.</p>
+<a class="header" href="print.html#trait-solving-new-style" id="trait-solving-new-style"><h1>Trait solving (new-style)</h1></a>
+<p>🚧 This chapter describes &quot;new-style&quot; trait solving. This is still in the
+<a href="https://github.com/rust-lang/rust/issues/48416">process of being implemented</a>; this chapter serves as a kind of
+in-progress design document. If you would prefer to read about how the
+current trait solver works, check out
+<a href="./trait-resolution.html">this other chapter</a>. (By the way, if you
+would like to help in hacking on the new solver, you will find
+instructions for getting involved in the
+<a href="https://github.com/rust-lang/rust/issues/48416">Traits Working Group tracking issue</a>.) 🚧</p>
+<p>Trait solving is based around a few key ideas:</p>
+<ul>
+<li><a href="./traits-lowering-to-logic.html">Lowering to logic</a>, which expresses
+Rust traits in terms of standard logical terms.
+<ul>
+<li>The <a href="./traits-goals-and-clauses.html">goals and clauses</a> chapter
+describes the precise form of rules we use, and
+<a href="./traits-lowering-rules.html">lowering rules</a> gives the complete set of
+lowering rules in a more reference-like form.</li>
+</ul>
+</li>
+<li><a href="./traits-canonical-queries.html">Canonical queries</a>, which allow us
+to solve trait problems (like &quot;is <code>Foo</code> implemented for the type
+<code>Bar</code>?&quot;) once, and then apply that same result independently in many
+different inference contexts.</li>
+<li><a href="./traits-associated-types.html">Lazy normalization</a>, which is the
+technique we use to accommodate associated types when figuring out
+whether types are equal.</li>
+<li><a href="./traits-regions.html">Region constraints</a>, which are accumulated
+during trait solving but mostly ignored. This means that trait
+solving effectively ignores the precise regions involved, always --
+but we still remember the constraints on them so that those
+constraints can be checked by thet type checker.</li>
+</ul>
+<p>Note: this is not a complete list of topics. See the sidebar for more.</p>
+<a class="header" href="print.html#lowering-to-logic" id="lowering-to-logic"><h1>Lowering to logic</h1></a>
+<p>The key observation here is that the Rust trait system is basically a
+kind of logic, and it can be mapped onto standard logical inference
+rules. We can then look for solutions to those inference rules in a
+very similar fashion to how e.g. a <a href="https://en.wikipedia.org/wiki/Prolog">Prolog</a> solver works. It turns out
+that we can't <em>quite</em> use Prolog rules (also called Horn clauses) but
+rather need a somewhat more expressive variant.</p>
+<a class="header" href="print.html#rust-traits-and-logic" id="rust-traits-and-logic"><h2>Rust traits and logic</h2></a>
+<p>One of the first observations is that the Rust trait system is
+basically a kind of logic. As such, we can map our struct, trait, and
+impl declarations into logical inference rules. For the most part,
+these are basically Horn clauses, though we'll see that to capture the
+full richness of Rust -- and in particular to support generic
+programming -- we have to go a bit further than standard Horn clauses.</p>
+<p>To see how this mapping works, let's start with an example. Imagine
+we declare a trait and a few impls, like so:</p>
+<pre><pre class="playpen"><code class="language-rust">
+# #![allow(unused_variables)]
+#fn main() {
+trait Clone { }
+impl Clone for usize { }
+impl&lt;T&gt; Clone for Vec&lt;T&gt; where T: Clone { }
+#}</code></pre></pre>
+<p>We could map these declarations to some Horn clauses, written in a
+Prolog-like notation, as follows:</p>
+<pre><code>Clone(usize).
+Clone(Vec&lt;?T&gt;) :- Clone(?T).
+
+// The notation `A :- B` means &quot;A is true if B is true&quot;.
+// Or, put another way, B implies A.
+</code></pre>
+<p>In Prolog terms, we might say that <code>Clone(Foo)</code> -- where <code>Foo</code> is some
+Rust type -- is a <em>predicate</em> that represents the idea that the type
+<code>Foo</code> implements <code>Clone</code>. These rules are <strong>program clauses</strong>; they
+state the conditions under which that predicate can be proven (i.e.,
+considered true). So the first rule just says &quot;Clone is implemented
+for <code>usize</code>&quot;. The next rule says &quot;for any type <code>?T</code>, Clone is
+implemented for <code>Vec&lt;?T&gt;</code> if clone is implemented for <code>?T</code>&quot;. So
+e.g. if we wanted to prove that <code>Clone(Vec&lt;Vec&lt;usize&gt;&gt;)</code>, we would do
+so by applying the rules recursively:</p>
+<ul>
+<li><code>Clone(Vec&lt;Vec&lt;usize&gt;&gt;)</code> is provable if:
+<ul>
+<li><code>Clone(Vec&lt;usize&gt;)</code> is provable if:
+<ul>
+<li><code>Clone(usize)</code> is provable. (Which is is, so we're all good.)</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<p>But now suppose we tried to prove that <code>Clone(Vec&lt;Bar&gt;)</code>. This would
+fail (after all, I didn't give an impl of <code>Clone</code> for <code>Bar</code>):</p>
+<ul>
+<li><code>Clone(Vec&lt;Bar&gt;)</code> is provable if:
+<ul>
+<li><code>Clone(Bar)</code> is provable. (But it is not, as there are no applicable rules.)</li>
+</ul>
+</li>
+</ul>
+<p>We can easily extend the example above to cover generic traits with
+more than one input type. So imagine the <code>Eq&lt;T&gt;</code> trait, which declares
+that <code>Self</code> is equatable with a value of type <code>T</code>:</p>
+<pre><pre class="playpen"><code class="language-rust">
+# #![allow(unused_variables)]
+#fn main() {
+trait Eq&lt;T&gt; { ... }
+impl Eq&lt;usize&gt; for usize { }
+impl&lt;T: Eq&lt;U&gt;&gt; Eq&lt;Vec&lt;U&gt;&gt; for Vec&lt;T&gt; { }
+#}</code></pre></pre>
+<p>That could be mapped as follows:</p>
+<pre><code>Eq(usize, usize).
+Eq(Vec&lt;?T&gt;, Vec&lt;?U&gt;) :- Eq(?T, ?U).
+</code></pre>
+<p>So far so good.</p>
+<a class="header" href="print.html#type-checking-normal-functions" id="type-checking-normal-functions"><h2>Type-checking normal functions</h2></a>
+<p>OK, now that we have defined some logical rules that are able to
+express when traits are implemented and to handle associated types,
+let's turn our focus a bit towards <strong>type-checking</strong>. Type-checking is
+interesting because it is what gives us the goals that we need to
+prove. That is, everything we've seen so far has been about how we
+derive the rules by which we can prove goals from the traits and impls
+in the program; but we are also interested in how to derive the goals
+that we need to prove, and those come from type-checking.</p>
+<p>Consider type-checking the function <code>foo()</code> here:</p>
+<pre><pre class="playpen"><code class="language-rust">
+# #![allow(unused_variables)]
+#fn main() {
+fn foo() { bar::&lt;usize&gt;() }
+fn bar&lt;U: Eq&lt;U&gt;&gt;() { }
+#}</code></pre></pre>
+<p>This function is very simple, of course: all it does is to call
+<code>bar::&lt;usize&gt;()</code>. Now, looking at the definition of <code>bar()</code>, we can see
+that it has one where-clause <code>U: Eq&lt;U&gt;</code>. So, that means that <code>foo()</code> will
+have to prove that <code>usize: Eq&lt;usize&gt;</code> in order to show that it can call <code>bar()</code>
+with <code>usize</code> as the type argument.</p>
+<p>If we wanted, we could write a Prolog predicate that defines the
+conditions under which <code>bar()</code> can be called. We'll say that those
+conditions are called being &quot;well-formed&quot;:</p>
+<pre><code>barWellFormed(?U) :- Eq(?U, ?U).
+</code></pre>
+<p>Then we can say that <code>foo()</code> type-checks if the reference to
+<code>bar::&lt;usize&gt;</code> (that is, <code>bar()</code> applied to the type <code>usize</code>) is
+well-formed:</p>
+<pre><code>fooTypeChecks :- barWellFormed(usize).
+</code></pre>
+<p>If we try to prove the goal <code>fooTypeChecks</code>, it will succeed:</p>
+<ul>
+<li><code>fooTypeChecks</code> is provable if:
+<ul>
+<li><code>barWellFormed(usize)</code>, which is provable if:
+<ul>
+<li><code>Eq(usize, usize)</code>, which is provable because of an impl.</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<p>Ok, so far so good. Let's move on to type-checking a more complex function.</p>
+<a class="header" href="print.html#type-checking-generic-functions-beyond-horn-clauses" id="type-checking-generic-functions-beyond-horn-clauses"><h2>Type-checking generic functions: beyond Horn clauses</h2></a>
+<p>In the last section, we used standard Prolog horn-clauses (augmented with Rust's
+notion of type equality) to type-check some simple Rust functions. But that only
+works when we are type-checking non-generic functions. If we want to type-check
+a generic function, it turns out we need a stronger notion of goal than Prolog
+can be provide. To see what I'm talking about, let's revamp our previous
+example to make <code>foo</code> generic:</p>
+<pre><pre class="playpen"><code class="language-rust">
+# #![allow(unused_variables)]
+#fn main() {
+fn foo&lt;T: Eq&lt;T&gt;&gt;() { bar::&lt;T&gt;() }
+fn bar&lt;U: Eq&lt;U&gt;&gt;() { }
+#}</code></pre></pre>
+<p>To type-check the body of <code>foo</code>, we need to be able to hold the type
+<code>T</code> &quot;abstract&quot;.  That is, we need to check that the body of <code>foo</code> is
+type-safe <em>for all types <code>T</code></em>, not just for some specific type. We might express
+this like so:</p>
+<pre><code>fooTypeChecks :-
+  // for all types T...
+  forall&lt;T&gt; {
+    // ...if we assume that Eq(T, T) is provable...
+    if (Eq(T, T)) {
+      // ...then we can prove that `barWellFormed(T)` holds.
+      barWellFormed(T)
+    }
+  }.
+</code></pre>
+<p>This notation I'm using here is the notation I've been using in my
+prototype implementation; it's similar to standard mathematical
+notation but a bit Rustified. Anyway, the problem is that standard
+Horn clauses don't allow universal quantification (<code>forall</code>) or
+implication (<code>if</code>) in goals (though many Prolog engines do support
+them, as an extension). For this reason, we need to accept something
+called &quot;first-order hereditary harrop&quot; (FOHH) clauses -- this long
+name basically means &quot;standard Horn clauses with <code>forall</code> and <code>if</code> in
+the body&quot;. But it's nice to know the proper name, because there is a
+lot of work describing how to efficiently handle FOHH clauses; see for
+example Gopalan Nadathur's excellent
+<a href="./traits-bibliography.html#pphhf">&quot;A Proof Procedure for the Logic of Hereditary Harrop Formulas&quot;</a>
+in <a href="./traits-bibliography.html">the bibliography</a>.</p>
+<p>It turns out that supporting FOHH is not really all that hard. And
+once we are able to do that, we can easily describe the type-checking
+rule for generic functions like <code>foo</code> in our logic.</p>
+<a class="header" href="print.html#source" id="source"><h2>Source</h2></a>
+<p>This page is a lightly adapted version of a
+<a href="http://smallcultfollowing.com/babysteps/blog/2017/01/26/lowering-rust-traits-to-logic/">blog post by Nicholas Matsakis</a>.</p>
+<a class="header" href="print.html#goals-and-clauses" id="goals-and-clauses"><h1>Goals and clauses</h1></a>
+<p>In logic programming terms, a <strong>goal</strong> is something that you must
+prove and a <strong>clause</strong> is something that you know is true. As
+described in the <a href="./traits-lowering-to-logic.html">lowering to logic</a>
+chapter, Rust's trait solver is based on an extension of hereditary
+harrop (HH) clauses, which extend traditional Prolog Horn clauses with
+a few new superpowers.</p>
+<a class="header" href="print.html#goals-and-clauses-meta-structure" id="goals-and-clauses-meta-structure"><h2>Goals and clauses meta structure</h2></a>
+<p>In Rust's solver, <strong>goals</strong> and <strong>clauses</strong> have the following forms
+(note that the two definitions reference one another):</p>
+<pre><code>Goal = DomainGoal           // defined in the section below
+     | Goal &amp;&amp; Goal
+     | Goal || Goal
+     | exists&lt;K&gt; { Goal }   // existential quantification
+     | forall&lt;K&gt; { Goal }   // universal quantification 
+     | if (Clause) { Goal } // implication
+     | true                 // something that's trivially true 
+     | ambiguous            // something that's never provable
+
+Clause = DomainGoal
+       | Clause :- Goal     // if can prove Goal, then Clause is true
+       | Clause &amp;&amp; Clause
+       | forall&lt;K&gt; { Clause }
+
+K = &lt;type&gt;     // a &quot;kind&quot;
+  | &lt;lifetime&gt;
+</code></pre>
+<p>The proof procedure for these sorts of goals is actually quite
+straightforward.  Essentially, it's a form of depth-first search. The
+paper
+<a href="./traits-bibliography.html#pphhf">&quot;A Proof Procedure for the Logic of Hereditary Harrop Formulas&quot;</a>
+gives the details.</p>
+<p><a name="domain-goals"></p>
+<a class="header" href="print.html#domain-goals" id="domain-goals"><h2>Domain goals</h2></a>
+<p><a name=trait-ref></p>
+<p>To define the set of <em>domain goals</em> in our system, we need to first
+introduce a few simple formulations. A <strong>trait reference</strong> consists of
+the name of a trait along with a suitable set of inputs P0..Pn:</p>
+<pre><code>TraitRef = P0: TraitName&lt;P1..Pn&gt;
+</code></pre>
+<p>So, for example, <code>u32: Display</code> is a trait reference, as is <code>Vec&lt;T&gt;: IntoIterator</code>. Note that Rust surface syntax also permits some extra
+things, like associated type bindings (<code>Vec&lt;T&gt;: IntoIterator&lt;Item = T&gt;</code>), that are not part of a trait reference.</p>
+<p><a name=projection></p>
+<p>A <strong>projection</strong> consists of an associated item reference along with
+its inputs P0..Pm:</p>
+<pre><code>Projection = &lt;P0 as TraitName&lt;P1..Pn&gt;&gt;::AssocItem&lt;Pn+1..Pm&gt;
+</code></pre>
+<p>Given that, we can define a <code>DomainGoal</code> as follows:</p>
+<pre><code>DomainGoal = Implemented(TraitRef)
+           | ProjectionEq(Projection = Type)
+           | Normalize(Projection -&gt; Type)
+           | FromEnv(TraitRef)
+           | FromEnv(Projection = Type)
+           | WellFormed(Type)
+           | WellFormed(TraitRef)
+           | WellFormed(Projection = Type)
+           | Outlives(Type, Region)
+           | Outlives(Region, Region)
+</code></pre>
+<ul>
+<li><code>Implemented(TraitRef)</code> -- true if the given trait is
+implemented for the given input types and lifetimes</li>
+<li><code>FromEnv(TraitEnv)</code> -- true if the given trait is <em>assumed</em> to be implemented;
+that is, if it can be derived from the in-scope where clauses
+<ul>
+<li>as we'll see in the section on lowering, <code>FromEnv(X)</code> implies
+<code>Implemented(X)</code> but not vice versa. This distinction is crucial
+to <a href="./traits-lowering-rules.html#implied-bounds">implied bounds</a>.</li>
+</ul>
+</li>
+<li><code>ProjectionEq(Projection = Type)</code> -- the given associated type <code>Projection</code> is equal
+to <code>Type</code>; see <a href="./traits-associated-types.html">the section on associated types</a>
+<ul>
+<li>in general, proving <code>ProjectionEq(TraitRef::Item = Type)</code> also
+requires proving <code>Implemented(TraitRef)</code></li>
+</ul>
+</li>
+<li><code>Normalize(Projection -&gt; Type)</code> -- the given associated type <code>Projection</code> can be <a href="./traits-associated-types.html#normalize">normalized</a>
+to <code>Type</code>
+<ul>
+<li>as discussed in <a href="./traits-associated-types.html">the section on associated types</a>,
+<code>Normalize</code> implies <code>ProjectionEq</code> but not vice versa</li>
+</ul>
+</li>
+<li><code>WellFormed(..)</code> -- these goals imply that the given item is
+<em>well-formed</em>
+<ul>
+<li>well-formedness is important to <a href="./traits-lowering-rules.html#implied-bounds">implied bounds</a>.</li>
+</ul>
+</li>
+</ul>
+<p><a name=coinductive></p>
+<a class="header" href="print.html#coinductive-goals" id="coinductive-goals"><h2>Coinductive goals</h2></a>
+<p>Most goals in our system are &quot;inductive&quot;. In an inductive goal,
+circular reasoning is disallowed. Consider this example clause:</p>
+<pre><code>Implemented(Foo: Bar) :-
+    Implemented(Foo: Bar).
+</code></pre>
+<p>Considered inductively, this clause is useless: if we are trying to
+prove <code>Implemented(Foo: Bar)</code>, we would then recursively have to prove
+<code>Implemented(Foo: Bar)</code>, and that cycle would continue ad infinitum
+(the trait solver will terminate here, it would just consider that
+<code>Implemented(Foo: Bar)</code> is not known to be true).</p>
+<p>However, some goals are <em>co-inductive</em>. Simply put, this means that
+cycles are OK. So, if <code>Bar</code> were a co-inductive trait, then the rule
+above would be perfectly valid, and it would indicate that
+<code>Implemented(Foo: Bar)</code> is true.</p>
+<p><em>Auto traits</em> are one example in Rust where co-inductive goals are used.
+Consider the <code>Send</code> trait, and imagine that we have this struct:</p>
+<pre><pre class="playpen"><code class="language-rust">
+# #![allow(unused_variables)]
+#fn main() {
+struct Foo {
+    next: Option&lt;Box&lt;Foo&gt;&gt;
+}
+#}</code></pre></pre>
+<p>The default rules for auto traits say that <code>Foo</code> is <code>Send</code> if the
+types of its fields are <code>Send</code>. Therefore, we would have a rule like</p>
+<pre><code>Implemented(Foo: Send) :-
+    Implemented(Option&lt;Box&lt;Foo&gt;&gt;: Send).
+</code></pre>
+<p>As you can probably imagine, proving that <code>Option&lt;Box&lt;Foo&gt;&gt;: Send</code> is
+going to wind up circularly requiring us to prove that <code>Foo: Send</code>
+again. So this would be an example where we wind up in a cycle -- but
+that's ok, we <em>do</em> consider <code>Foo: Send</code> to hold, even though it
+references itself.</p>
+<p>In general, co-inductive traits are used in Rust trait solving when we
+want to enumerate a fixed set of possibilities. In the case of auto
+traits, we are enumerating the set of reachable types from a given
+starting point (i.e., <code>Foo</code> can reach values of type
+<code>Option&lt;Box&lt;Foo&gt;&gt;</code>, which implies it can reach values of type
+<code>Box&lt;Foo&gt;</code>, and then of type <code>Foo</code>, and then the cycle is complete).</p>
+<p>In addition to auto traits, <code>WellFormed</code> predicates are co-inductive.
+These are used to achieve a similar &quot;enumerate all the cases&quot; pattern,
+as described in the section on <a href="./traits-lowering-rules.html#implied-bounds">implied bounds</a>.</p>
+<a class="header" href="print.html#incomplete-chapter" id="incomplete-chapter"><h2>Incomplete chapter</h2></a>
+<p>Some topics yet to be written:</p>
+<ul>
+<li>Elaborate on the proof procedure</li>
+<li>SLG solving -- introduce negative reasoning</li>
+</ul>
+<a class="header" href="print.html#equality-and-associated-types" id="equality-and-associated-types"><h1>Equality and associated types</h1></a>
+<p>This section covers how the trait system handles equality between
+associated types. The full system consists of several moving parts,
+which we will introduce one by one:</p>
+<ul>
+<li>Projection and the <code>Normalize</code> predicate</li>
+<li>Skolemization</li>
+<li>The <code>ProjectionEq</code> predicate</li>
+<li>Integration with unification</li>
+</ul>
+<a class="header" href="print.html#associated-type-projection-and-normalization" id="associated-type-projection-and-normalization"><h2>Associated type projection and normalization</h2></a>
+<p>When a trait defines an associated type (e.g.,
+[the <code>Item</code> type in the <code>IntoIterator</code> trait][intoiter-item]), that
+type can be referenced by the user using an <strong>associated type
+projection</strong> like <code>&lt;Option&lt;u32&gt; as IntoIterator&gt;::Item</code>. (Often,
+though, people will use the shorthand syntax <code>T::Item</code> -- presently,
+that syntax is expanded during
+<a href="./type-checking.html">&quot;type collection&quot;</a> into the explicit form,
+though that is something we may want to change in the future.)</p>
+<p><a name=normalize></p>
+<p>In some cases, associated type projections can be <strong>normalized</strong> --
+that is, simplified -- based on the types given in an impl. So, to
+continue with our example, the impl of <code>IntoIterator</code> for <code>Option&lt;T&gt;</code>
+declares (among other things) that <code>Item = T</code>:</p>
+<pre><pre class="playpen"><code class="language-rust">
+# #![allow(unused_variables)]
+#fn main() {
+impl&lt;T&gt; IntoIterator for Option&lt;T&gt; {
+  type Item = T;
+  ..
+}
+#}</code></pre></pre>
+<p>This means we can normalize the projection <code>&lt;Option&lt;u32&gt; as IntoIterator&gt;::Item</code> to just <code>u32</code>.</p>
+<p>In this case, the projection was a &quot;monomorphic&quot; one -- that is, it
+did not have any type parameters.  Monomorphic projections are special
+because they can <strong>always</strong> be fully normalized -- but often we can
+normalize other associated type projections as well. For example,
+<code>&lt;Option&lt;?T&gt; as IntoIterator&gt;::Item</code> (where <code>?T</code> is an inference
+variable) can be normalized to just <code>?T</code>.</p>
+<p>In our logic, normalization is defined by a predicate
+<code>Normalize</code>. The <code>Normalize</code> clauses arise only from
+impls. For example, the <code>impl</code> of <code>IntoIterator</code> for <code>Option&lt;T&gt;</code> that
+we saw above would be lowered to a program clause like so:</p>
+<pre><code>forall&lt;T&gt; {
+    Normalize(&lt;Option&lt;T&gt; as IntoIterator&gt;::Item -&gt; T)
+}    
+</code></pre>
+<p>(An aside: since we do not permit quantification over traits, this is
+really more like a family of predicates, one for each associated
+type.)</p>
+<p>We could apply that rule to normalize either of the examples that
+we've seen so far.</p>
+<a class="header" href="print.html#skolemized-associated-types" id="skolemized-associated-types"><h2>Skolemized associated types</h2></a>
+<p>Sometimes however we want to work with associated types that cannot be
+normalized. For example, consider this function:</p>
+<pre><pre class="playpen"><code class="language-rust">
+# #![allow(unused_variables)]
+#fn main() {
+fn foo&lt;T: IntoIterator&gt;(...) { ... }
+#}</code></pre></pre>
+<p>In this context, how would we normalize the type <code>T::Item</code>? Without
+knowing what <code>T</code> is, we can't really do so. To represent this case, we
+introduce a type called a <strong>skolemized associated type
+projection</strong>. This is written like so <code>(IntoIterator::Item)&lt;T&gt;</code>. You
+may note that it looks a lot like a regular type (e.g., <code>Option&lt;T&gt;</code>),
+except that the &quot;name&quot; of the type is <code>(IntoIterator::Item)</code>. This is
+not an accident: skolemized associated type projections work just like
+ordinary types like <code>Vec&lt;T&gt;</code> when it comes to unification. That is,
+they are only considered equal if (a) they are both references to the
+same associated type, like <code>IntoIterator::Item</code> and (b) their type
+arguments are equal.</p>
+<p>Skolemized associated types are never written directly by the user.
+They are used internally by the trait system only, as we will see
+shortly.</p>
+<a class="header" href="print.html#projection-equality" id="projection-equality"><h2>Projection equality</h2></a>
+<p>So far we have seen two ways to answer the question of &quot;When can we
+consider an associated type projection equal to another type?&quot;:</p>
+<ul>
+<li>the <code>Normalize</code> predicate could be used to transform associated type
+projections when we knew which impl was applicable;</li>
+<li><strong>skolemized</strong> associated types can be used when we don't.</li>
+</ul>
+<p>We now introduce the <code>ProjectionEq</code> predicate to bring those two cases
+together. The <code>ProjectionEq</code> predicate looks like so:</p>
+<pre><code>ProjectionEq(&lt;T as IntoIterator&gt;::Item = U)
+</code></pre>
+<p>and we will see that it can be proven <em>either</em> via normalization or
+skolemization. As part of lowering an associated type declaration from
+some trait, we create two program clauses for <code>ProjectionEq</code>:</p>
+<pre><code>forall&lt;T, U&gt; {
+    ProjectionEq(&lt;T as IntoIterator&gt;::Item = U) :-
+        Normalize(&lt;T as IntoIterator&gt;::Item -&gt; U)
+}
+
+forall&lt;T&gt; {
+    ProjectionEq(&lt;T as IntoIterator&gt;::Item = (IntoIterator::Item)&lt;T&gt;)
+}
+</code></pre>
+<p>These are the only two <code>ProjectionEq</code> program clauses we ever make for
+any given associated item.</p>
+<a class="header" href="print.html#integration-with-unification" id="integration-with-unification"><h2>Integration with unification</h2></a>
+<p>Now we are ready to discuss how associated type equality integrates
+with unification. As described in the
+<a href="./type-inference.html">type inference</a> section, unification is
+basically a procedure with a signature like this:</p>
+<pre><code>Unify(A, B) = Result&lt;(Subgoals, RegionConstraints), NoSolution&gt;
+</code></pre>
+<p>In other words, we try to unify two things A and B. That procedure
+might just fail, in which case we get back <code>Err(NoSolution)</code>. This
+would happen, for example, if we tried to unify <code>u32</code> and <code>i32</code>.</p>
+<p>The key point is that, on success, unification can also give back to
+us a set of subgoals that still remain to be proven (it can also give
+back region constraints, but those are not relevant here).</p>
+<p>Whenever unification encounters an (unskolemized!) associated type
+projection P being equated with some other type T, it always succeeds,
+but it produces a subgoal <code>ProjectionEq(P = T)</code> that is propagated
+back up. Thus it falls to the ordinary workings of the trait system
+to process that constraint.</p>
+<p>(If we unify two projections P1 and P2, then unification produces a
+variable X and asks us to prove that <code>ProjectionEq(P1 = X)</code> and
+<code>ProjectionEq(P2 = X)</code>. That used to be needed in an older system to
+prevent cycles; I rather doubt it still is. -nmatsakis)</p>
+<a class="header" href="print.html#implied-bounds" id="implied-bounds"><h1>Implied Bounds</h1></a>
+<p><em>to be written</em></p>
+<p>Cover:</p>
+<ul>
+<li>Why the <code>FromEnv</code> setup etc is the way it is</li>
+<li>Perhaps move some of the material from 'lowering rules' in to here</li>
+<li>Show various examples where you could go wrong</li>
+</ul>
+<a class="header" href="print.html#region-constraints-1" id="region-constraints-1"><h1>Region constraints</h1></a>
+<p><em>to be written</em></p>
+<a class="header" href="print.html#canonical-queries" id="canonical-queries"><h1>Canonical queries</h1></a>
+<p>The &quot;start&quot; of the trait system is the <strong>canonical query</strong> (these are
+both queries in the more general sense of the word -- something you
+would like to know the answer to -- and in the
+<a href="./query.html">rustc-specific sense</a>).  The idea is that the type
+checker or other parts of the system, may in the course of doing their
+thing want to know whether some trait is implemented for some type
+(e.g., is <code>u32: Debug</code> true?). Or they may want to
+<a href="./traits-associated-types.html">normalize some associated type</a>.</p>
+<p>This section covers queries at a fairly high level of abstraction. The
+subsections look a bit more closely at how these ideas are implemented
+in rustc.</p>
+<a class="header" href="print.html#the-traditional-interactive-prolog-query" id="the-traditional-interactive-prolog-query"><h2>The traditional, interactive Prolog query</h2></a>
+<p>In a traditional Prolog system, when you start a query, the solver
+will run off and start supplying you with every possible answer it can
+find. So given something like this:</p>
+<pre><code>?- Vec&lt;i32&gt;: AsRef&lt;?U&gt;
+</code></pre>
+<p>The solver might answer:</p>
+<pre><code>Vec&lt;i32&gt;: AsRef&lt;[i32]&gt;
+    continue? (y/n)
+</code></pre>
+<p>This <code>continue</code> bit is interesting. The idea in Prolog is that the
+solver is finding <strong>all possible</strong> instantiations of your query that
+are true. In this case, if we instantiate <code>?U = [i32]</code>, then the query
+is true (note that a traditional Prolog interface does not, directly,
+tell us a value for <code>?U</code>, but we can infer one by unifying the
+response with our original query -- Rust's solver gives back a
+substitution instead). If we were to hit <code>y</code>, the solver might then
+give us another possible answer:</p>
+<pre><code>Vec&lt;i32&gt;: AsRef&lt;Vec&lt;i32&gt;&gt;
+    continue? (y/n)
+</code></pre>
+<p>This answer derives from the fact that there is a reflexive impl
+(<code>impl&lt;T&gt; AsRef&lt;T&gt; for T</code>) for <code>AsRef</code>. If were to hit <code>y</code> again,
+then we might get back a negative response:</p>
+<pre><code>no
+</code></pre>
+<p>Naturally, in some cases, there may be no possible answers, and hence
+the solver will just give me back <code>no</code> right away:</p>
+<pre><code>?- Box&lt;i32&gt;: Copy
+    no
+</code></pre>
+<p>In some cases, there might be an infinite number of responses. So for
+example if I gave this query, and I kept hitting <code>y</code>, then the solver
+would never stop giving me back answers:</p>
+<pre><code>?- Vec&lt;?U&gt;: Clone
+   Vec&lt;i32&gt;: Clone
+     continue? (y/n)
+   Vec&lt;Box&lt;i32&gt;&gt;: Clone
+     continue? (y/n)
+   Vec&lt;Box&lt;Box&lt;i32&gt;&gt;&gt;: Clone
+     continue? (y/n)
+   Vec&lt;Box&lt;Box&lt;Box&lt;i32&gt;&gt;&gt;&gt;: Clone
+     continue? (y/n)
+</code></pre>
+<p>As you can imagine, the solver will gleefully keep adding another
+layer of <code>Box</code> until we ask it to stop, or it runs out of memory.</p>
+<p>Another interesting thing is that queries might still have variables
+in them. For example:</p>
+<pre><code>?- Rc&lt;?T&gt;: Clone
+</code></pre>
+<p>might produce the answer:</p>
+<pre><code>Rc&lt;?T&gt;: Clone
+    continue? (y/n)
+</code></pre>
+<p>After all, <code>Rc&lt;?T&gt;</code> is true <strong>no matter what type <code>?T</code> is</strong>.</p>
+<a class="header" href="print.html#a-trait-query-in-rustc" id="a-trait-query-in-rustc"><h2>A trait query in rustc</h2></a>
+<p>The trait queries in rustc work somewhat differently. Instead of
+trying to enumerate <strong>all possible</strong> answers for you, they are looking
+for an <strong>unambiguous</strong> answer. In particular, when they tells you the
+value for a type variable, that means that this is the <strong>only possible
+instantiation</strong> that you could use, given the current set of impls and
+where-clauses, that would be provable. (Internally within the solver,
+though, they can potentially enumerate all possible answers. See
+<a href="./traits-slg.html">the description of the SLG solver</a> for details.)</p>
+<p><a name=query-response></p>
+<p>The response to a trait query in rustc is typically a
+<code>Result&lt;QueryResult&lt;T&gt;, NoSolution&gt;</code> (where the <code>T</code> will vary a bit
+depending on the query itself). The <code>Err(NoSolution)</code> case indicates
+that the query was false and had no answers (e.g., <code>Box&lt;i32&gt;: Copy</code>).
+Otherwise, the <code>QueryResult</code> gives back information about the possible answer(s)
+we did find. It consists of four parts:</p>
+<ul>
+<li><strong>Certainty:</strong> tells you how sure we are of this answer. It can have two values:
+<ul>
+<li><code>Proven</code> means that the result is known to be true.
+<ul>
+<li>This might be the result for trying to prove <code>Vec&lt;i32&gt;: Clone</code>,
+say, or <code>Rc&lt;?T&gt;: Clone</code>.</li>
+</ul>
+</li>
+<li><code>Ambiguous</code> means that there were things we could not yet prove to
+be either true <em>or</em> false, typically because more type information
+was needed. (We'll see an example shortly.)
+<ul>
+<li>This might be the result for trying to prove <code>Vec&lt;?T&gt;: Clone</code>.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><strong>Var values:</strong> Values for each of the unbound inference variables
+(like <code>?T</code>) that appeared in your original query. (Remember that in Prolog,
+we had to infer these.)
+<ul>
+<li>As we'll see in the example below, we can get back var values even
+for <code>Ambiguous</code> cases.</li>
+</ul>
+</li>
+<li><strong>Region constraints:</strong> these are relations that must hold between
+the lifetimes that you supplied as inputs. We'll ignore these here,
+but see the
+<a href="./traits-regions.html">section on handling regions in traits</a> for
+more details.</li>
+<li><strong>Value:</strong> The query result also comes with a value of type <code>T</code>. For
+some specialized queries -- like normalizing associated types --
+this is used to carry back an extra result, but it's often just
+<code>()</code>.</li>
+</ul>
+<a class="header" href="print.html#examples" id="examples"><h3>Examples</h3></a>
+<p>Let's work through an example query to see what all the parts mean.
+Consider <a href="https://doc.rust-lang.org/std/borrow/trait.Borrow.html">the <code>Borrow</code> trait</a>. This trait has a number of
+impls; among them, there are these two (for clarify, I've written the
+<code>Sized</code> bounds explicitly):</p>
+<pre><pre class="playpen"><code class="language-rust">
+# #![allow(unused_variables)]
+#fn main() {
+impl&lt;T&gt; Borrow&lt;T&gt; for T where T: ?Sized
+impl&lt;T&gt; Borrow&lt;[T]&gt; for Vec&lt;T&gt; where T: Sized
+#}</code></pre></pre>
+<p><strong>Example 1.</strong> Imagine we are type-checking this (rather artificial)
+bit of code:</p>
+<pre><pre class="playpen"><code class="language-rust">fn foo&lt;A, B&gt;(a: A, vec_b: Option&lt;B&gt;) where A: Borrow&lt;B&gt; { }
+
+fn main() {
+    let mut t: Vec&lt;_&gt; = vec![]; // Type: Vec&lt;?T&gt;
+    let mut u: Option&lt;_&gt; = None; // Type: Option&lt;?U&gt;
+    foo(t, u); // Example 1: requires `Vec&lt;?T&gt;: Borrow&lt;?U&gt;`
+    ...
+}
+</code></pre></pre>
+<p>As the comments indicate, we first create two variables <code>t</code> and <code>u</code>;
+<code>t</code> is an empty vector and <code>u</code> is a <code>None</code> option. Both of these
+variables have unbound inference variables in their type: <code>?T</code>
+represents the elements in the vector <code>t</code> and <code>?U</code> represents the
+value stored in the option <code>u</code>.  Next, we invoke <code>foo</code>; comparing the
+signature of <code>foo</code> to its arguments, we wind up with <code>A = Vec&lt;?T&gt;</code> and
+<code>B = ?U</code>.Therefore, the where clause on <code>foo</code> requires that <code>Vec&lt;?T&gt;: Borrow&lt;?U&gt;</code>. This is thus our first example trait query.</p>
+<p>There are many possible solutions to the query <code>Vec&lt;?T&gt;: Borrow&lt;?U&gt;</code>;
+for example:</p>
+<ul>
+<li><code>?U = Vec&lt;?T&gt;</code>,</li>
+<li><code>?U = [?T]</code>,</li>
+<li><code>?T = u32, ?U = [u32]</code></li>
+<li>and so forth.</li>
+</ul>
+<p>Therefore, the result we get back would be as follows (I'm going to
+ignore region constraints and the &quot;value&quot;):</p>
+<ul>
+<li>Certainty: <code>Ambiguous</code> -- we're not sure yet if this holds</li>
+<li>Var values: <code>[?T = ?T, ?U = ?U]</code> -- we learned nothing about the values of the variables</li>
+</ul>
+<p>In short, the query result says that it is too soon to say much about
+whether this trait is proven. During type-checking, this is not an
+immediate error: instead, the type checker would hold on to this
+requirement (<code>Vec&lt;?T&gt;: Borrow&lt;?U&gt;</code>) and wait. As we'll see in the next
+example, it may happen that <code>?T</code> and <code>?U</code> wind up constrained from
+other sources, in which case we can try the trait query again.</p>
+<p><strong>Example 2.</strong> We can now extend our previous example a bit,
+and assign a value to <code>u</code>:</p>
+<pre><pre class="playpen"><code class="language-rust">fn foo&lt;A, B&gt;(a: A, vec_b: Option&lt;B&gt;) where A: Borrow&lt;B&gt; { }
+
+fn main() {
+    // What we saw before:
+    let mut t: Vec&lt;_&gt; = vec![]; // Type: Vec&lt;?T&gt;
+    let mut u: Option&lt;_&gt; = None; // Type: Option&lt;?U&gt;
+    foo(t, u); // `Vec&lt;?T&gt;: Borrow&lt;?U&gt;` =&gt; ambiguous
+    
+    // New stuff:
+    u = Some(vec![]); // ?U = Vec&lt;?V&gt;
+}
+</code></pre></pre>
+<p>As a result of this assignment, the type of <code>u</code> is forced to be
+<code>Option&lt;Vec&lt;?V&gt;&gt;</code>, where <code>?V</code> represents the element type of the
+vector. This in turn implies that <code>?U</code> is <a href="./type-checking.html">unified</a> to <code>Vec&lt;?V&gt;</code>.</p>
+<p>Let's suppose that the type checker decides to revisit the
+&quot;as-yet-unproven&quot; trait obligation we saw before, <code>Vec&lt;?T&gt;: Borrow&lt;?U&gt;</code>. <code>?U</code> is no longer an unbound inference variable; it now
+has a value, &amp;. So, if we &quot;refresh&quot; the query with that value, we get:</p>
+<pre><code>Vec&lt;?T&gt;: Borrow&lt;Vec&lt;?V&gt;&gt;
+</code></pre>
+<p>This time, there is only one impl that applies, the reflexive impl:</p>
+<pre><code>impl&lt;T&gt; Borrow&lt;T&gt; for T where T: ?Sized
+</code></pre>
+<p>Therefore, the trait checker will answer:</p>
+<ul>
+<li>Certainty: <code>Proven</code></li>
+<li>Var values: <code>[?T = ?T, ?V = ?T]</code></li>
+</ul>
+<p>Here, it is saying that we have indeed proven that the obligation
+holds, and we also know that <code>?T</code> and <code>?V</code> are the same type (but we
+don't know what that type is yet!).</p>
+<p>(In fact, as the function ends here, the type checker would give an
+error at this point, since the element types of <code>t</code> and <code>u</code> are still
+not yet known, even though they are known to be the same.)</p>
+<a class="header" href="print.html#canonicalization" id="canonicalization"><h1>Canonicalization</h1></a>
+<p>Canonicalization is the process of <strong>isolating</strong> an inference value
+from its context. It is a key part of implementing
+<a href="./traits-canonical-queries.html">canonical queries</a>, and you may wish to read the parent chapter
+to get more context.</p>
+<p>Canonicalization is really based on a very simple concept: every
+<a href="./type-inference.html#vars">inference variable</a> is always in one of
+two states: either it is <strong>unbound</strong>, in which case we don't know yet
+what type it is, or it is <strong>bound</strong>, in which case we do. So to
+isolate some data-structure T that contains types/regions from its
+environment, we just walk down and find the unbound variables that
+appear in T; those variables get replaced with &quot;canonical variables&quot;,
+starting from zero and numbered in a fixed order (left to right, for
+the most part, but really it doesn't matter as long as it is
+consistent).</p>
+<p>So, for example, if we have the type <code>X = (?T, ?U)</code>, where <code>?T</code> and
+<code>?U</code> are distinct, unbound inference variables, then the canonical
+form of <code>X</code> would be <code>(?0, ?1)</code>, where <code>?0</code> and <code>?1</code> represent these
+<strong>canonical placeholders</strong>. Note that the type <code>Y = (?U, ?T)</code> also
+canonicalizes to <code>(?0, ?1)</code>. But the type <code>Z = (?T, ?T)</code> would
+canonicalize to <code>(?0, ?0)</code> (as would <code>(?U, ?U)</code>). In other words, the
+exact identity of the inference variables is not important -- unless
+they are repeated.</p>
+<p>We use this to improve caching as well as to detect cycles and other
+things during trait resolution. Roughly speaking, the idea is that if
+two trait queries have the same canonicalize form, then they will get
+the same answer. That answer will be expressed in terms of the
+canonical variables (<code>?0</code>, <code>?1</code>), which we can then map back to the
+original variables (<code>?T</code>, <code>?U</code>).</p>
+<a class="header" href="print.html#canonicalizing-the-query" id="canonicalizing-the-query"><h2>Canonicalizing the query</h2></a>
+<p>To see how it works, imagine that we are asking to solve the following
+trait query: <code>?A: Foo&lt;'static, ?B&gt;</code>, where <code>?A</code> and <code>?B</code> are unbound.
+This query contains two unbound variables, but it also contains the
+lifetime <code>'static</code>. The trait system generally ignores all lifetimes
+and treats them equally, so when canonicalizing, we will <em>also</em>
+replace any <a href="./background.html#free-vs-bound">free lifetime</a> with a
+canonical variable. Therefore, we get the following result:</p>
+<pre><code>?0: Foo&lt;'?1, ?2&gt;
+</code></pre>
+<p>Sometimes we write this differently, like so:</p>
+<pre><code>for&lt;T,L,T&gt; { ?0: Foo&lt;'?1, ?2&gt; }
+</code></pre>
+<p>This <code>for&lt;&gt;</code> gives some information about each of the canonical
+variables within.  In this case, each <code>T</code> indicates a type variable,
+so <code>?0</code> and <code>?2</code> are types; the <code>L</code> indicates a lifetime varibale, so
+<code>?1</code> is a lifetime. The <code>canonicalize</code> method <em>also</em> gives back a
+<code>CanonicalVarValues</code> array OV with the &quot;original values&quot; for each
+canonicalized variable:</p>
+<pre><code>[?A, 'static, ?B]
+</code></pre>
+<p>We'll need this vector OV later, when we process the query response.</p>
+<a class="header" href="print.html#executing-the-query" id="executing-the-query"><h2>Executing the query</h2></a>
+<p>Once we've constructed the canonical query, we can try to solve it.
+To do so, we will wind up creating a fresh inference context and
+<strong>instantiating</strong> the canonical query in that context. The idea is that
+we create a substitution S from the canonical form containing a fresh
+inference variable (of suitable kind) for each canonical variable.
+So, for our example query:</p>
+<pre><code>for&lt;T,L,T&gt; { ?0: Foo&lt;'?1, ?2&gt; }
+</code></pre>
+<p>the substitution S might be:</p>
+<pre><code>S = [?A, '?B, ?C]
+</code></pre>
+<p>We can then replace the bound canonical variables (<code>?0</code>, etc) with
+these inference variables, yielding the following fully instantiated
+query:</p>
+<pre><code>?A: Foo&lt;'?B, ?C&gt;
+</code></pre>
+<p>Remember that substitution S though! We're going to need it later.</p>
+<p>OK, now that we have a fresh inference context and an instantiated
+query, we can go ahead and try to solve it. The trait solver itself is
+explained in more detail in <a href="./traits-slg.html">another section</a>, but
+suffice to say that it will compute a <a href="./traits-canonical-queries.html#query-response">certainty value</a> (<code>Proven</code> or
+<code>Ambiguous</code>) and have side-effects on the inference variables we've
+created. For example, if there were only one impl of <code>Foo</code>, like so:</p>
+<pre><code>impl&lt;'a, X&gt; Foo&lt;'a, X&gt; for Vec&lt;X&gt;
+where X: 'a
+{ ... }
+</code></pre>
+<p>then we might wind up with a certainty value of <code>Proven</code>, as well as
+creating fresh inference variables <code>'?D</code> and <code>?E</code> (to represent the
+parameters on the impl) and unifying as follows:</p>
+<ul>
+<li><code>'?B = '?D</code></li>
+<li><code>?A = Vec&lt;?E&gt;</code></li>
+<li><code>?C = ?E</code></li>
+</ul>
+<p>We would also accumulate the region constraint <code>?E: '?D</code>, due to the
+where clause.</p>
+<p>In order to create our final query result, we have to &quot;lift&quot; these
+values out of the query's inference context and into something that
+can be reapplied in our original inference context. We do that by
+<strong>re-applying canonicalization</strong>, but to the <strong>query result</strong>.</p>
+<a class="header" href="print.html#canonicalizing-the-query-result" id="canonicalizing-the-query-result"><h2>Canonicalizing the query result</h2></a>
+<p>As discussed in <a href="./traits-canonical-queries.html#query-response">the parent section</a>, most trait queries wind up
+with a result that brings together a &quot;certainty value&quot; <code>certainty</code>, a
+result substitution <code>var_values</code>, and some region constraints. To
+create this, we wind up re-using the substitution S that we created
+when first instantiating our query. To refresh your memory, we had a query</p>
+<pre><code>for&lt;T,L,T&gt; { ?0: Foo&lt;'?1, ?2&gt; }
+</code></pre>
+<p>for which we made a substutition S:</p>
+<pre><code>S = [?A, '?B, ?C]
+</code></pre>
+<p>We then did some work which unified some of those variables with other things. If we
+&quot;refresh&quot; S with the latest results, we get:</p>
+<pre><code>S = [Vec&lt;?E&gt;, '?D, ?E]
+</code></pre>
+<p>These are precisely the new values for the three input variables from
+our original query. Note though that they include some new variables
+(like <code>?E</code>). We can make those go away by canonicalizing again! We don't
+just canonicalize S, though, we canonicalize the whole query response QR:</p>
+<pre><code>QR = {
+  certainty: Proven,             // or whatever
+  var_values: [Vec&lt;?E&gt;, '?D, ?E] // this is S
+  region_constraints: [?E: '?D], // from the impl
+  value: (),                     // for our purposes, just (), but 
+                                 // in some cases this might have
+                                 // a type or other info
+}                                     
+</code></pre>
+<p>The result would be as follows:</p>
+<pre><code>Canonical(QR) = for&lt;T, L&gt; {
+  certainty: Proven,
+  var_values: [Vec&lt;?0&gt;, '?1, ?2]
+  region_constraints: [?2: '?1],
+  value: (),
+}                                     
+</code></pre>
+<p>(One subtle point: when we canonicalize the query <strong>result</strong>, we do not
+use any special treatment for free lifetimes. Note that both
+references to <code>'?D</code>, for example, were converted into the same
+canonical variable (<code>?1</code>). This is in contrast to the original query,
+where we canonicalized every free lifetime into a fresh canonical
+variable.)</p>
+<p>Now, this result must be reapplied in each context where needed.</p>
+<a class="header" href="print.html#processing-the-canonicalized-query-result" id="processing-the-canonicalized-query-result"><h2>Processing the canonicalized query result</h2></a>
+<p>In the previous section we produced a canonical query result. We now have
+to apply that result in our original context. If you recall, way back in the
+beginning, we were trying to prove this query:</p>
+<pre><code>?A: Foo&lt;'static, ?B&gt;
+</code></pre>
+<p>We canonicalized that into this:</p>
+<pre><code>for&lt;T,L,T&gt; { ?0: Foo&lt;'?1, ?2&gt; }
+</code></pre>
+<p>and now we got back a canonical response:</p>
+<pre><code>for&lt;T, L&gt; {
+  certainty: Proven,
+  var_values: [Vec&lt;?0&gt;, '?1, ?2]
+  region_constraints: [?2: '?1],
+  value: (),
+}                                     
+</code></pre>
+<p>We now want to apply that response to our context. Conceptually, how
+we do that is to (a) instantiate each of the canonical variables in
+the result with a fresh inference variable, (b) unify the values in
+the result with the original values, and then (c) record the region
+constraints for later. Doing step (a) would yield a result of</p>
+<pre><code>{
+      certainty: Proven,
+      var_values: [Vec&lt;?C&gt;, '?D, ?C]
+                       ^^   ^^^ fresh inference variables
+      region_constraints: [?C: '?D],
+      value: (),
+}         
+</code></pre>
+<p>Step (b) would then unify:</p>
+<pre><code>?A with Vec&lt;?C&gt;
+'static with '?D
+?B with ?C
+</code></pre>
+<p>And finally the region constraint of <code>?C: 'static</code> would be recorded
+for later verification.</p>
+<p>(What we <em>actually</em> do is a mildly optimized variant of that: Rather
+than eagerly instantiating all of the canonical values in the result
+with variables, we instead walk the vector of values, looking for
+cases where the value is just a canonical variable. In our example,
+<code>values[2]</code> is <code>?C</code>, so that we means we can deduce that <code>?C := ?B and</code>'?D := 'static`. This gives us a partial set of values. Anything for
+which we do not find a value, we create an inference variable.)</p>
+<a class="header" href="print.html#lowering-rules" id="lowering-rules"><h1>Lowering rules</h1></a>
+<p>This section gives the complete lowering rules for Rust traits into
+<a href="./traits-goals-and-clauses.html">program clauses</a>. It is a kind of reference. These rules
+reference the <a href="./traits-goals-and-clauses.html#domain-goals">domain goals</a> defined in an earlier section.</p>
+<a class="header" href="print.html#notation" id="notation"><h2>Notation</h2></a>
+<p>The nonterminal <code>Pi</code> is used to mean some generic <em>parameter</em>, either a
+named lifetime like <code>'a</code> or a type paramter like <code>A</code>.</p>
+<p>The nonterminal <code>Ai</code> is used to mean some generic <em>argument</em>, which
+might be a lifetime like <code>'a</code> or a type like <code>Vec&lt;A&gt;</code>.</p>
+<p>When defining the lowering rules, we will give goals and clauses in
+the <a href="./traits-goals-and-clauses.html">notation given in this section</a>.
+We sometimes insert &quot;macros&quot; like <code>LowerWhereClause!</code> into these
+definitions; these macros reference other sections within this chapter.</p>
+<a class="header" href="print.html#lowering-where-clauses" id="lowering-where-clauses"><h2>Lowering where clauses</h2></a>
+<p>When used in a goal position, where clauses can be mapped directly to
+<a href="./traits-goals-and-clauses.html#domain-goals">domain goals</a>, as follows:</p>
+<ul>
+<li><code>A0: Foo&lt;A1..An&gt;</code> maps to <code>Implemented(A0: Foo&lt;A1..An&gt;)</code>.</li>
+<li><code>A0: Foo&lt;A1..An, Item = T&gt;</code> maps to <code>ProjectionEq(&lt;A0 as Foo&lt;A1..An&gt;&gt;::Item = T)</code></li>
+<li><code>T: 'r</code> maps to <code>Outlives(T, 'r)</code></li>
+<li><code>'a: 'b</code> maps to <code>Outlives('a, 'b)</code></li>
+</ul>
+<p>In the rules below, we will use <code>WC</code> to indicate where clauses that
+appear in Rust syntax; we will then use the same <code>WC</code> to indicate
+where those where clauses appear as goals in the program clauses that
+we are producing. In that case, the mapping above is used to convert
+from the Rust syntax into goals.</p>
+<a class="header" href="print.html#transforming-the-lowered-where-clauses" id="transforming-the-lowered-where-clauses"><h3>Transforming the lowered where clauses</h3></a>
+<p>In addition, in the rules below, we sometimes do some transformations
+on the lowered where clauses, as defined here:</p>
+<ul>
+<li><code>FromEnv(WC)</code> -- this indicates that:
+<ul>
+<li><code>Implemented(TraitRef)</code> becomes <code>FromEnv(TraitRef)</code></li>
+<li><code>ProjectionEq(Projection = Ty)</code> becomes <code>FromEnv(Projection = Ty)</code></li>
+<li>other where-clauses are left intact</li>
+</ul>
+</li>
+<li><code>WellFormed(WC)</code> -- this indicates that:
+<ul>
+<li><code>Implemented(TraitRef)</code> becomes <code>WellFormed(TraitRef)</code></li>
+<li><code>ProjectionEq(Projection = Ty)</code> becomes <code>WellFormed(Projection = Ty)</code></li>
+</ul>
+</li>
+</ul>
+<p><em>TODO</em>: I suspect that we want to alter the outlives relations too,
+but Chalk isn't modeling those right now.</p>
+<a class="header" href="print.html#lowering-traits" id="lowering-traits"><h2>Lowering traits</h2></a>
+<p>Given a trait definition</p>
+<pre><pre class="playpen"><code class="language-rust">
+# #![allow(unused_variables)]
+#fn main() {
+trait Trait&lt;P1..Pn&gt; // P0 == Self
+where WC
+{
+    // trait items
+}
+#}</code></pre></pre>
+<p>we will produce a number of declarations. This section is focused on
+the program clauses for the trait header (i.e., the stuff outside the
+<code>{}</code>); the <a href="print.html#trait-items">section on trait items</a> covers the stuff
+inside the <code>{}</code>.</p>
+<a class="header" href="print.html#trait-header" id="trait-header"><h3>Trait header</h3></a>
+<p>From the trait itself we mostly make &quot;meta&quot; rules that setup the
+relationships between different kinds of domain goals.  The first such
+rule from the trait header creates the mapping between the <code>FromEnv</code>
+and <code>Implemented</code> predicates:</p>
+<pre><code>forall&lt;Self, P1..Pn&gt; {
+  Implemented(Self: Trait&lt;P1..Pn&gt;) :- FromEnv(Self: Trait&lt;P1..Pn&gt;)
+}
+</code></pre>
+<p><a name="implied-bounds"></p>
+<a class="header" href="print.html#implied-bounds-1" id="implied-bounds-1"><h4>Implied bounds</h4></a>
+<p>The next few clauses have to do with implied bounds (see also
+<a href="https://rust-lang.github.io/rfcs/2089-implied-bounds.html">RFC 2089</a>). For each trait, we produce two clauses:</p>
+<pre><code>// For each where clause WC:
+forall&lt;Self, P1..Pn&gt; {
+  FromEnv(WC) :- FromEnv(Self: Trait&lt;P1..Pn)
+}
+</code></pre>
+<p>This clause says that if we are assuming that the trait holds, then we can also
+assume that it's where-clauses hold. It's perhaps useful to see an example:</p>
+<pre><pre class="playpen"><code class="language-rust">
+# #![allow(unused_variables)]
+#fn main() {
+trait Eq: PartialEq { ... }
+#}</code></pre></pre>
+<p>In this case, the <code>PartialEq</code> supertrait is equivalent to a <code>where Self: PartialEq</code> where clause, in our simplified model. The program
+clause above therefore states that if we can prove <code>FromEnv(T: Eq)</code> --
+e.g., if we are in some function with <code>T: Eq</code> in its where clauses --
+then we also know that <code>FromEnv(T: PartialEq)</code>. Thus the set of things
+that follow from the environment are not only the <strong>direct where
+clauses</strong> but also things that follow from them.</p>
+<p>The next rule is related; it defines what it means for a trait reference
+to be <strong>well-formed</strong>:</p>
+<pre><code>// For each where clause WC:
+forall&lt;Self, P1..Pn&gt; {
+  WellFormed(Self: Trait&lt;P1..Pn&gt;) :- Implemented(Self: Trait&lt;P1..Pn&gt;) &amp;&amp; WellFormed(WC)
+}
+</code></pre>
+<p>This <code>WellFormed</code> rule states that <code>T: Trait</code> is well-formed if (a)
+<code>T: Trait</code> is implemented and (b) all the where-clauses declared on
+<code>Trait</code> are well-formed (and hence they are implemented). Remember
+that the <code>WellFormed</code> predicate is
+<a href="./traits-goals-and-clauses.html#coinductive">coinductive</a>; in this
+case, it is serving as a kind of &quot;carrier&quot; that allows us to enumerate
+all the where clauses that are transitively implied by <code>T: Trait</code>.</p>
+<p>An example:</p>
+<pre><pre class="playpen"><code class="language-rust">
+# #![allow(unused_variables)]
+#fn main() {
+trait Foo: A + Bar { }
+trait Bar: B + Foo { }
+trait A { }
+trait B { }
+#}</code></pre></pre>
+<p>Here, the transitive set of implications for <code>T: Foo</code> are <code>T: A</code>, <code>T: Bar</code>, and <code>T: B</code>.
+And indeed if we were to try to prove <code>WellFormed(T: Foo)</code>, we would have to prove each
+one of those:</p>
+<ul>
+<li><code>WellFormed(T: Foo)</code>
+<ul>
+<li><code>Implemented(T: Foo)</code></li>
+<li><code>WellFormed(T: A)</code>
+<ul>
+<li><code>Implemented(T: A)</code></li>
+</ul>
+</li>
+<li><code>WellFormed(T: Bar)</code>
+<ul>
+<li><code>Implemented(T: Bar)</code></li>
+<li><code>WellFormed(T: B)</code>
+<ul>
+<li><code>Implemented(T: Bar)</code></li>
+</ul>
+</li>
+<li><code>WellFormed(T: Foo)</code> -- cycle, true coinductively</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<p>This <code>WellFormed</code> predicate is only used when proving that impls are
+well-formed -- basically, for each impl of some trait ref <code>TraitRef</code>,
+we must show that <code>WellFormed(TraitRef)</code>. This in turn justifies the
+implied bounds rules that allow us to extend the set of <code>FromEnv</code>
+items.</p>
+<p><a name=trait-items></p>
+<a class="header" href="print.html#lowering-trait-items" id="lowering-trait-items"><h2>Lowering trait items</h2></a>
+<a class="header" href="print.html#associated-type-declarations" id="associated-type-declarations"><h3>Associated type declarations</h3></a>
+<p>Given a trait that declares a (possibly generic) associated type:</p>
+<pre><pre class="playpen"><code class="language-rust">
+# #![allow(unused_variables)]
+#fn main() {
+trait Trait&lt;P1..Pn&gt; // P0 == Self
+where WC
+{
+    type AssocType&lt;Pn+1..Pm&gt;: Bounds where WC1;
+}
+#}</code></pre></pre>
+<p>We will produce a number of program clauses. The first two define
+the rules by which <code>ProjectionEq</code> can succeed; these two clauses are discussed
+in detail in the <a href="./traits-associated-types.html">section on associated types</a>,,
+but reproduced here for reference:</p>
+<pre><code>// ProjectionEq can succeed by normalizing:
+forall&lt;Self, P1..Pn, Pn+1..Pm, U&gt; {
+  ProjectionEq(&lt;Self as Trait&lt;P1..Pn&gt;&gt;::AssocType&lt;Pn+1..Pm&gt; = U) :-
+      Normalize(&lt;Self as Trait&lt;P1..Pn&gt;&gt;::AssocType&lt;Pn+1..Pm&gt; -&gt; U)
+}
+
+// ProjectionEq can succeed by skolemizing, see &quot;associated type&quot;
+// chapter for more:
+forall&lt;Self, P1..Pn, Pn+1..Pm&gt; {
+  ProjectionEq(
+    &lt;Self as Trait&lt;P1..Pn&gt;&gt;::AssocType&lt;Pn+1..Pm&gt; =
+      (Trait::AssocType)&lt;Self, P1..Pn, Pn+1..Pm&gt;
+  ) :-
+    // But only if the trait is implemented, and the conditions from
+    // the associated type are met as well:
+    Implemented(Self: Trait&lt;P1..Pn&gt;)
+    &amp;&amp; WC1
+}
+</code></pre>
+<p>The next rule covers implied bounds for the projection. In particular,
+the <code>Bounds</code> declared on the associated type must be proven to hold to
+show that the impl is well-formed, and hence we can rely on them
+elsewhere.</p>
+<pre><code>// XXX how exactly should we set this up? Have to be careful;
+// presumably this has to be a kind of `FromEnv` setup.
+</code></pre>
+<a class="header" href="print.html#lowering-function-and-constant-declarations" id="lowering-function-and-constant-declarations"><h3>Lowering function and constant declarations</h3></a>
+<p>Chalk didn't model functions and constants, but I would eventually
+like to treat them exactly like normalization. See <a href="print.html#constant-vals">the section on function/constant
+values below</a> for more details.</p>
+<a class="header" href="print.html#lowering-impls" id="lowering-impls"><h2>Lowering impls</h2></a>
+<p>Given an impl of a trait:</p>
+<pre><pre class="playpen"><code class="language-rust">
+# #![allow(unused_variables)]
+#fn main() {
+impl&lt;P0..Pn&gt; Trait&lt;A1..An&gt; for A0
+where WC
+{
+    // zero or more impl items
+}
+#}</code></pre></pre>
+<p>Let <code>TraitRef</code> be the trait reference <code>A0: Trait&lt;A1..An&gt;</code>. Then we
+will create the following rules:</p>
+<pre><code>forall&lt;P0..Pn&gt; {
+  Implemented(TraitRef) :- WC
+}
+</code></pre>
+<p>In addition, we will lower all of the <em>impl items</em>.</p>
+<a class="header" href="print.html#lowering-impl-items" id="lowering-impl-items"><h2>Lowering impl items</h2></a>
+<a class="header" href="print.html#associated-type-values" id="associated-type-values"><h3>Associated type values</h3></a>
+<p>Given an impl that contains:</p>
+<pre><pre class="playpen"><code class="language-rust">
+# #![allow(unused_variables)]
+#fn main() {
+impl&lt;P0..Pn&gt; Trait&lt;A1..An&gt; for A0
+where WC
+{
+    type AssocType&lt;Pn+1..Pm&gt; where WC1 = T;
+}
+#}</code></pre></pre>
+<p>We produce the following rule:</p>
+<pre><code>forall&lt;P0..Pm&gt; {
+  forall&lt;Pn+1..Pm&gt; {
+    Normalize(&lt;A0 as Trait&lt;A1..An&gt;&gt;::AssocType&lt;Pn+1..Pm&gt; -&gt; T) :-
+      WC &amp;&amp; WC1
+  }
+}
+</code></pre>
+<p>Note that <code>WC</code> and <code>WC1</code> both encode where-clauses that the impl can
+rely on.</p>
+<p><a name=constant-vals></p>
+<a class="header" href="print.html#function-and-constant-values" id="function-and-constant-values"><h3>Function and constant values</h3></a>
+<p>Chalk didn't model functions and constants, but I would eventually
+like to treat them exactly like normalization. This presumably
+involves adding a new kind of parameter (constant), and then having a
+<code>NormalizeValue</code> domain goal. This is <em>to be written</em> because the
+details are a bit up in the air.</p>
+<a class="header" href="print.html#well-formedness-checking" id="well-formedness-checking"><h1>Well-formedness checking</h1></a>
+<p>This chapter is mostly <em>to be written</em>. WF checking, in short, has the
+job of checking that the various declarations in a Rust program are
+well-formed. This is the basis for implied bounds, and partly for that
+reason, this checking can be surprisingly subtle! (For example, we
+have to be sure that each impl proves the WF conditions declared on
+the trait.)</p>
+<a class="header" href="print.html#the-slg-solver" id="the-slg-solver"><h1>The SLG solver</h1></a>
+<a class="header" href="print.html#bibliography" id="bibliography"><h1>Bibliography</h1></a>
+<p>If you'd like to read more background material, here are some
+recommended texts and papers:</p>
+<p><a href="https://www.amazon.com/Programming-Higher-Order-Logic-Dale-Miller/dp/052187940X">Programming with Higher-order Logic</a>, by Dale Miller and Gopalan
+Nadathur, covers the key concepts of Lambda prolog. Although it's a
+slim little volume, it's the kind of book where you learn something
+new every time you open it.</p>
+<p><a name=pphhf></p>
+<p><a href="https://dl.acm.org/citation.cfm?id=868380">&quot;A proof procedure for the logic of Hereditary Harrop formulas&quot;</a>,
+by Gopalan Nadathur. This paper covers the basics of universes,
+environments, and Lambda Prolog-style proof search. Quite readable.</p>
+<p><a name=slg></p>
+<p><a href="https://dl.acm.org/citation.cfm?id=651202">&quot;A new formulation of tabled resolution with delay&quot;</a>, by
+[Theresa Swift]. This paper gives a kind of abstract treatment of the
+SLG formulation that is the basis for our on-demand solver.</p>
 <a class="header" href="print.html#type-checking" id="type-checking"><h1>Type checking</h1></a>
 <a class="header" href="print.html#the-mir-mid-level-ir" id="the-mir-mid-level-ir"><h1>The MIR (Mid-level IR)</h1></a>
 <p>MIR is Rust's <em>Mid-level Intermediate Representation</em>. It is
@@ -3843,10 +4967,12 @@ does not.</p>
 <tr><td><a href="https://llvm.org/">LLVM</a>                  </td><td>  (actually not an acronym :P) an open-source compiler backend. It accepts LLVM IR and outputs native binaries. Various languages (e.g. Rust) can then implement a compiler front-end that output LLVM IR and use LLVM to compile to all the platforms LLVM supports.</td></tr>
 <tr><td>MIR                     </td><td>  the Mid-level IR that is created after type-checking for use by borrowck and trans (<a href="./mir.html">see more</a>)</td></tr>
 <tr><td>miri                    </td><td>  an interpreter for MIR used for constant evaluation (<a href="./miri.html">see more</a>)</td></tr>
+<tr><td>normalize               </td><td>  a general term for converting to a more canonical form, but in the case of rustc typically refers to <a href="./traits-associated-types.html#normalize">associated type normalization</a></td></tr>
 <tr><td>newtype                 </td><td>  a &quot;newtype&quot; is a wrapper around some other type (e.g., <code>struct Foo(T)</code> is a &quot;newtype&quot; for <code>T</code>). This is commonly used in Rust to give a stronger type for indices.</td></tr>
 <tr><td>NLL                     </td><td> <a href="./mir-regionck.html">non-lexical lifetimes</a>, an extension to Rust's borrowing system to make it be based on the control-flow graph.</td></tr>
 <tr><td>node-id or NodeId       </td><td>  an index identifying a particular node in the AST or HIR; gradually being phased out and replaced with <code>HirId</code>.</td></tr>
 <tr><td>obligation              </td><td>  something that must be proven by the trait system (<a href="trait-resolution.html">see more</a>)</td></tr>
+<tr><td>projection              </td><td>  a general term for a &quot;relative path&quot;, e.g. <code>x.f</code> is a &quot;field projection&quot;, and <code>T::Item</code> is an <a href="./traits-goals-and-clauses.html#trait-ref">&quot;associated type projection&quot;</a></td></tr>
 <tr><td>promoted constants      </td><td>  constants extracted from a function and lifted to static scope; see <a href="./mir.html#promoted">this section</a> for more details.</td></tr>
 <tr><td>provider                </td><td>  the function that executes a query (<a href="query.html">see more</a>)</td></tr>
 <tr><td>quantified              </td><td>  in math or logic, existential and universal quantification are used to ask questions like &quot;is there any type T for which is true?&quot; or &quot;is this true for all types T?&quot;; see <a href="./background.html#quantified">the background chapter for more</a></td></tr>
@@ -3861,6 +4987,7 @@ does not.</p>
 <tr><td>substs                  </td><td>  the substitutions for a given generic type or item (e.g. the <code>i32</code>, <code>u32</code> in <code>HashMap&lt;i32, u32&gt;</code>)</td></tr>
 <tr><td>tcx                     </td><td>  the &quot;typing context&quot;, main data structure of the compiler (<a href="ty.html">see more</a>)</td></tr>
 <tr><td>'tcx                    </td><td>  the lifetime of the currently active inference context (<a href="ty.html">see more</a>)</td></tr>
+<tr><td>trait reference         </td><td>  the name of a trait along with a suitable set of input type/lifetimes (<a href="./traits-goals-and-clauses.html#trait-ref">see more</a>)</td></tr>
 <tr><td>token                   </td><td>  the smallest unit of parsing. Tokens are produced after lexing (<a href="the-parser.html">see more</a>).</td></tr>
 <tr><td><a href="https://llvm.org/docs/LangRef.html#thread-local-storage-models">TLS</a>                   </td><td>  Thread-Local Storage. Variables may be defined so that each thread has its own copy (rather than all threads sharing the variable). This has some interactions with LLVM. Not all platforms support TLS.</td></tr>
 <tr><td>trans                   </td><td>  the code to translate MIR into LLVM IR.</td></tr>
@@ -3875,6 +5002,7 @@ compiler.</p>
 <table><thead><tr><th>Item            </th><th>  Kind    </th><th> Short description           </th><th> Chapter            </th><th> Declaration</th></tr></thead><tbody>
 <tr><td><code>CodeMap</code> </td><td> struct </td><td> The CodeMap maps the AST nodes to their source code </td><td> <a href="the-parser.html">The parser</a> </td><td> <a href="https://github.com/rust-lang/rust/blob/master/src/libsyntax/codemap.rs">src/libsyntax/codemap.rs</a></td></tr>
 <tr><td><code>ParseSess</code> </td><td> struct </td><td> This struct contains information about a parsing session </td><td> <a href="the-parser.html">The parser</a> </td><td> <a href="https://github.com/rust-lang/rust/blob/master/src/libsyntax/parse/mod.rs">src/libsyntax/parse/mod.rs</a></td></tr>
+<tr><td><code>StringReader</code> </td><td> struct </td><td> This is the lexer used during parsing. It consumes characters from the raw source code being compiled and produces a series of tokens for use by the rest of the parser </td><td> <a href="the-parser.html">The parser</a> </td><td>  <a href="https://github.com/rust-lang/rust/blob/master/src/libsyntax/parse/lexer/mod.rs">src/libsyntax/parse/lexer/mod.rs</a></td></tr>
 <tr><td><code>TraitDef</code> </td><td> struct </td><td> This struct contains a trait's definition with type information </td><td> <a href="ty.html">The <code>ty</code> modules</a> </td><td>  <a href="https://github.com/rust-lang/rust/blob/master/src/librustc/ty/trait_def.rs">src/librustc/ty/trait_def.rs</a></td></tr>
 <tr><td><code>TyCtxt&lt;'cx, 'tcx, 'tcx&gt;</code> </td><td> type </td><td> The &quot;typing context&quot;. This is the central data structure in the compiler. It is the context that you use to perform all manner of queries. </td><td> <a href="ty.html">The <code>ty</code> modules</a> </td><td> <a href="https://github.com/rust-lang/rust/blob/master/src/librustc/ty/context.rs">src/librustc/ty/context.rs</a></td></tr>
 </tbody></table>
